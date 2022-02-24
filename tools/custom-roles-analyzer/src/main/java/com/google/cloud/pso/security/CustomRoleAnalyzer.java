@@ -78,7 +78,11 @@ public class CustomRoleAnalyzer {
       logger.atSevere().withCause(e).log("Unable to process project level custom roles.");
       System.exit(1);
     }
-    logger.atInfo().log("Successfully executed custom role analysis and results are written to: " + GenericConstants.RESULT_FILENAME + "." + resultFormat);
+    logger.atInfo().log(
+        "Successfully executed custom role analysis and results are written to: "
+            + GenericConstants.RESULT_FILENAME
+            + "."
+            + resultFormat);
     System.exit(1);
   }
 }

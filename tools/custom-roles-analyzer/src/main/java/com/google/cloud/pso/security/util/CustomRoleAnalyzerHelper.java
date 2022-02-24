@@ -242,7 +242,7 @@ public class CustomRoleAnalyzerHelper {
     } catch (IOException | GeneralSecurityException e) {
       logger.atSevere().withCause(e).log("Exception while feching custom roles: " + parent);
       try {
-        if(resultsFile != null) {
+        if (resultsFile != null) {
           resultsFile.close();
         }
       } catch (IOException ie) {
@@ -328,13 +328,13 @@ public class CustomRoleAnalyzerHelper {
             } catch (IOException | GeneralSecurityException e) {
               logger.atSevere().withCause(e).log(
                   "Exception while feching permissions: " + resourcePath);
-                  try {
-                    if(resultsFile != null) {
-                      resultsFile.close();
-                    }
-                  } catch (IOException ie) {
-                    logger.atSevere().withCause(ie).log("Exception while closing file steam.");
-                  }
+              try {
+                if (resultsFile != null) {
+                  resultsFile.close();
+                }
+              } catch (IOException ie) {
+                logger.atSevere().withCause(ie).log("Exception while closing file steam.");
+              }
               throw e;
             }
             allPermissionsProjectLevel =
@@ -357,7 +357,7 @@ public class CustomRoleAnalyzerHelper {
       }
     }
     try {
-      if(resultsFile != null) {
+      if (resultsFile != null) {
         resultsFile.close();
       }
     } catch (IOException ie) {
