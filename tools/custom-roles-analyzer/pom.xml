@@ -27,7 +27,7 @@ limitations under the License.
   </properties>
 
   <dependencies>
-    <!-- https://mvnrepository.com/artifact/com.google.cloud/google-iam-admin -->
+ 
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-iam-admin</artifactId>
@@ -41,13 +41,13 @@ limitations under the License.
   <groupId>com.google.apis</groupId>
   <artifactId>google-api-services-iamcredentials</artifactId>
   <version>v1-rev20210813-1.32.1</version>
-</dependency><!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client-gson -->
+</dependency>
 <dependency>
   <groupId>com.google.api-client</groupId>
   <artifactId>google-api-client-gson</artifactId>
   <version>1.33.1</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-resourcemanager -->
+
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-resourcemanager</artifactId>
